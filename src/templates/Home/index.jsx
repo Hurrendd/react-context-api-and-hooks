@@ -2,8 +2,11 @@ import { useCounterContext } from '../../contexts/CounterContexts';
 import './styles.css';
 
 export const Home = () => {
-  const [state, dispatch] = useCounterContext();
-  console.log(state);
+  const [state, actions] = useCounterContext();
 
-  return <div>OI</div>;
+  return (
+    <div>
+      <h1 onClick={() => actions.increase()}>Disparar</h1>
+    </div>
+  );
 };
