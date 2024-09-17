@@ -18,3 +18,25 @@
 .search-container h1 {
   margin-bottom: 20px;
 }
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divflex_item1 {
+  background-color: grey;
+  display: flex;
+  cursor: pointer;
+}
+.divflex_item2 {
+  background-color: green;
+  display: flex;
+  cursor: pointer;
+}
+
+.divflex_item1:hover,
+.divflex_item2:hover {
+  flex: 2;
+}
